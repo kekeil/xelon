@@ -43,3 +43,25 @@ let nCount = selector => {
       navbar.removeClass("sticky");
     }
   });
+
+
+
+
+  function openEmailClient(event) {
+    event.preventDefault();
+    
+    // Get form values
+    var email = document.getElementById('contact-form-email').value;
+    var number = document.getElementById('contact-form-number').value;
+    var message = document.getElementById('contact-form-message').value;
+    
+    // Construct the mailto link
+    var mailtoLink = 'mailto:gxlogistique@gmail.com' +
+                     '?subject=Contact from ' + encodeURIComponent(email) +
+                     '&body=' + encodeURIComponent('Email: ' + email + '\n' + 
+                                                   'Contact Number: ' + number + '\n' + 
+                                                   'Message: ' + message);
+    
+    // Open the email client
+    window.location.href = mailtoLink;
+}

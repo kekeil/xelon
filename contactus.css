@@ -1,0 +1,60 @@
+.contact-form label {
+    margin-bottom: 0.2rem;
+    color: #007bff; /* Exemple de couleur pour v.$primary */
+    font-weight: 500;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background-color: #f0f0f0; /* Exemple de couleur pour v.$even-bg */
+    border-radius: 5px;
+    border: 1px solid #007bff; /* Exemple de couleur pour v.$primary */
+    margin-bottom: 2rem;
+    outline: 0;
+    padding: 0.5rem;
+    transition: all 0.3s ease; /* Exemple de transition pour v.$transition */
+    width: 100%;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    background-color: #e0e0e0; /* Exemple de couleur pour v.$odd-bg */
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-color: #17a2b8; /* Exemple de couleur pour v.$info */
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .contact-form input,
+    .contact-form textarea {
+      margin-bottom: 1rem;
+    }
+  }
+  
+
+/* camion caterpillar et mot aumilieu */
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #left-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  #right-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Adaptez le style existant si nécessaire */
+  
